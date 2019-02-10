@@ -9,7 +9,7 @@ WMD=( "i3" "terminator" )
 
 #Prefix za preuzimanje
 # -y opcija da izbjegnemo interaktivnost
-DOWNSTRING="apt install -y"
+DOWNSTRING="apt install -y "
 
 #ČITANJE ARGUMENATA
 #dok ima zadanih argumenata...
@@ -40,7 +40,7 @@ case $key in
     shift # past value
     ;;
     -h|--help)
-    #ispii pomoc
+    #ispisi pomoc
     echo -e "Options are:"
     echo -e "\t [-i|--install] install programs, use d, e, m or w - or any combination to pick a group"
     echo -e "\t usage: sudo bash config.sh -i demw"
